@@ -67,7 +67,6 @@ class Navitia(object):
         return query + '?depth=0'
 
     def _navitia_caller(self, query):
-
         try:
             return requests.get(query, headers={"Authorization": self.token}, timeout=self.timeout)
         except (requests.exceptions.RequestException):
@@ -99,10 +98,3 @@ class Navitia(object):
                 return json[self.collections[object_type]][0]
 
         return None
-
-    def __repr__(self):
-        """
-        Overrides __repr__ method in order to separate cached entities by token, coverage and url
-        :return: String
-        """
-        return 'chaos.Navitia(url=%s, coverage=%s, token=%s, timeout=%d)' % (self.url, self.coverage, self.token, self.timeout)
