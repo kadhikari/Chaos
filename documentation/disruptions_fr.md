@@ -592,7 +592,7 @@ Lors d'un succés une réponse 200 est retourné, celle ci contient la perturbat
                              "application_periods": [{"begin": "2014-04-31T16:52:00Z","end": "2014-05-22T02:15:00Z"}]
                           },{ "id":"7ffab230-3d48-4eea-aa2c-22f8680230b6", "severity": {"id": "3d1f42b2-e8df-11e3-8c3e-0008ca8657ea"},
                              "application_periods": [{"begin": "2014-04-31T16:52:00Z","end": "2014-05-22T02:15:00Z"}]
-                          },"send_notifications": true]
+                          },"send_notifications": true, "notification_date": "2014-04-31T17:00:00Z"]
             }
 
 
@@ -793,6 +793,7 @@ Cette fonction donne la liste des impacts par type d'objet.
                         {
                             "application_period_patterns": [],
                             "send_notifications": true,
+                            "notification_date": "2014-04-31T17:00:00Z",
                             "application_periods": [
                                     {
                                         "begin": "2014-03-29T16:52:00Z",
@@ -899,6 +900,7 @@ Aucun filtre actuellement sur la récupération de liste des impacts: l'interrog
                         "created_at": "2014-04-31T16:52:18Z",
                         "updated_at": "2014-04-31T16:55:18Z",
                         "send_notifications": true,
+                        "notification_date": "2014-04-31T17:00:00Z",
                         "severity": {
                             "id": "3d1f42b2-e8df-11e3-8c3e-0008ca86c7ea",
                             "wordings" : [{"key": "msg", "value": "Bonne nouvelle"}],
@@ -1013,6 +1015,7 @@ Lors d'un succés une réponse 201 est retourné, celle ci contient l'impact cr�
                     "id": "3d1f42b2-e8df-11e3-8c3e-0008ca8657ea"
                 },
                 "send_notifications": true,
+                "notification_date": "2014-04-31T17:00:00Z",
                 "application_period_patterns": [
                     {
                         "end_date": "2015-02-06",
@@ -1106,6 +1109,7 @@ Lors d'un succés une réponse 201 est retourné, celle ci contient l'impact cr�
                     "created_at": "2014-04-31T16:52:18Z",
                     "updated_at": "2014-04-31T16:55:18Z",
                     "send_notifications": true,
+                    "notification_date": "2014-04-31T17:00:00Z",
                     "severity": {
                         "id": "3d1f42b2-e8df-11e3-8c3e-0008ca861aea",
                         "wordings" : [{"key": "msg", "value": "Bonne nouvelle"}],
@@ -1311,6 +1315,7 @@ Lors d'un succés une réponse 201 est retourné, celle ci contient l'impact cr�
                     "created_at": "2014-04-31T16:52:18Z",
                     "updated_at": "2014-04-31T16:55:18Z",
                     "send_notifications": true,
+                    "notification_date": "2014-04-31T17:00:00Z",
                     "severity": {
                         "id": "3d1f42b2-e8df-11e3-8c3e-0008ca861aea",
                         "wordings" : [{"key": "msg", "value": "Bonne nouvelle"}],
@@ -1463,6 +1468,7 @@ Lors d'un succés une réponse 200 est retourné, celle ci contient l'impact mod
                     "created_at": "2014-04-31T16:52:18Z",
                     "updated_at": "2014-04-31T16:55:18Z",
                     "send_notifications": true,
+                    "notification_date": "2014-04-31T17:00:00Z",
                     "severity": {
                         "id": "3d1f42b2-e8df-11e3-8c3e-0008ca861aea",
                         "wordings" : [{"key": "msg", "value": "Bonne nouvelle"}],
@@ -1597,6 +1603,7 @@ Lors d'un succés une réponse 200 est retourné, celle ci contient l'impact mod
                     "created_at": "2014-04-31T16:52:18Z",
                     "updated_at": "2014-04-31T16:55:18Z",
                     "send_notifications": true,
+                    "notification_date": "2014-04-31T17:00:00Z",
                     "severity": {
                         "id": "3d1f42b2-e8df-11e3-8c3e-0008ca861aea",
                         "wordings" : [{"key": "msg", "value": "Bonne nouvelle"}],
