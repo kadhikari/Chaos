@@ -37,7 +37,7 @@ from fields import *
 from formats import *
 from formats import impact_input_format, channel_input_format, pt_object_type_values,\
     tag_input_format, category_input_format, channel_type_values,\
-    property_input_format, disruptions_search_input_format
+    property_input_format, disruptions_search_input_format, application_status_values
 from chaos import mapper, exceptions
 from chaos import utils, db_helper
 import chaos
@@ -170,6 +170,10 @@ class Disruptions(flask_restful.Resource):
 
         parser_get.add_argument("start_page", type=int, default=1)
         parser_get.add_argument("items_per_page", type=int, default=20)
+        parser_get.add_argument("application_status[]",
+                                type=option_value(publication_status_values),
+                                action="append",
+                                default=application_status_values)
         parser_get.add_argument("publication_status[]",
                                 type=option_value(publication_status_values),
                                 action="append",
@@ -488,6 +492,7 @@ class DisruptionsSearch(flask_restful.Resource):
             page_index=args['start_page'],
             items_per_page=args['items_per_page'],
             contributor_id=contributor.id,
+            application_status=json.get('application_status', application_status_values),
             publication_status=json.get('publication_status', publication_status_values),
             ends_after_date=args['ends_after_date'],
             ends_before_date=args['ends_before_date'],
